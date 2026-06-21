@@ -8,7 +8,7 @@ A serverless web application built on AWS. The website is hosted on Amazon S3 an
 ![](Screenshots/serverless_web_application.drawio.png)
 
 <details>
-<summary>Click here to view Configuration & Results</summary>
+<summary>Click here to view Configuration and Results</summary>
   
 | Description | Config | Screenshot |
 |-------------|:--------|------------|
