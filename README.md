@@ -1,21 +1,32 @@
 ##Serverless Web Application
 A serverless visitor counter application built using AWS.
 
-##**Architecture**
+**Architecture**
 
-<detail>
+<details>
 <summary>Click Here to view the configuration and result</summary>
+  
 | Description | Screenshot |
 |-------------|------------|
-| Architecture | ![](Screenshots/serverless web application.drawio) |
+| Architecture | ![](Screenshots/serverlesswebapplication.drawio) |
 | Route 53   | |
-| CloudFront | ![](Screenshots/CloudFront Distribution.png) |
-| S3 bucket | ![](Screenshots/S3 bucket.png) |
+| CloudFront | ![](Screenshots/CloudFrontDistribution.png) |
+| S3 bucket | ![](Screenshots/S3bucket.png) |
 | Lambda | ![](Screenshots/Lambda.png) |
-| DynamoDB | ![](Screenshots/DynamoDB.png)
+| DynamoDB | ![](Screenshots/DynamoDB.png) |
 
+<details>
+<summary>CloudFront Configuration</summary>
 
-</detail>
+| Step                | Screenshot                             |
+| ------------------- | -------------------------------------- |
+| Create Distribution | ![](screenshots/cloudfront-create.png) |
+| Configure Origin    | ![](screenshots/cloudfront-config.png) |
+| Result              | ![](screenshots/cloudfront-result.png) |
+
+</details>
+
+</details>
 ---
 
 ##**AWS Service Used**
