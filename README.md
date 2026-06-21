@@ -5,19 +5,14 @@ A serverless visitor counter application built using AWS.
 
 <detail>
 <summary>Click Here to view the configuration and result</summary>
-| Step | Description | Screenshot |
-|---|---|---| 
-| Rout 53 | Create Route 53 |  |
-| | Config | |
-| | Result | |
-| CloudFront | Create | |
-| | Config | |
-| | Result | |
-| S3 Static Website | Create | |
-| | Config | |
-| | Result | |
-|Lambda Function | | |
-| DynamoDB | | |
+| Description | Screenshot |
+|-------------|------------|
+| Architecture | ![](Screenshots/serverless web application.drawio) |
+| Route 53   | |
+| CloudFront | ![](Screenshots/CloudFront Distribution.png) |
+| S3 bucket | ![](Screenshots/S3 bucket.png) |
+| Lambda | ![](Screenshots/Lambda.png) |
+| DynamoDB | ![](Screenshots/DynamoDB.png)
 
 
 </detail>
