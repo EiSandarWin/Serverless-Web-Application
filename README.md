@@ -1,48 +1,40 @@
-##Serverless Web Application
-A serverless visitor counter application built using AWS.
+## Serverless Web Application
 
-**Architecture**
+## Project Overview
+
+A serverless web application built on AWS. The website is hosted on Amazon S3 and delivered through CloudFront. When a user clicks the button, AWS Lambda updates a counter stored in DynamoDB and returns the latest value to the webpage.
+
+## Architecture
+![](Screenshots/serverless_web_application.drawio.png)
 
 <details>
-<summary>Click Here to view the configuration and result</summary>
+<summary>Click here to view Configuration & Results</summary>
   
-| Description | Screenshot |
-|-------------|------------|
-| Architecture | ![](Screenshots/serverlesswebapplication.drawio) |
-| Route 53   | |
-| CloudFront | ![](Screenshots/CloudFrontDistribution.png) |
-| S3 bucket | ![](Screenshots/S3bucket.png) |
-| Lambda | ![](Screenshots/Lambda.png) |
-| DynamoDB | ![](Screenshots/DynamoDB.png) |
+| Description | Config | Screenshot |
+|-------------|:--------|------------|
+| **Route 53**   | 1. Created S3 bucket <br> 2. Uploaded static website files <br> 3. Enabled website hosting | |
+| **CloudFront** | 1. Created CloudFront distribution <br> 2. Connected S3 bucket as origin <br> 3. Enabled HTTPS | ![](Screenshots/CloudFront_Distribution.png) |
+| S3 bucket | 1. Created S3 bucket <br> 2. Uploaded static website files <br> 3. Enabled website hosting | ![](Screenshots/S3_bucket.png) |
+| Lambda | 1. Created Python Lambda function <br> 2. Connected Lambda to DynamoDB <br> 3. Enabled Function URL | ![](Screenshots/Lambda.png) |
+| DynamoDB | 1. Created DynamoDB table <br> 2. Partition Key: id <br> 3. Stored visitor counter | ![](Screenshots/DynamoDB.png) |
 
-<details>
-<summary>CloudFront Configuration</summary>
 
-| Step                | Screenshot                             |
-| ------------------- | -------------------------------------- |
-| Create Distribution | ![](screenshots/cloudfront-create.png) |
-| Configure Origin    | ![](screenshots/cloudfront-config.png) |
-| Result              | ![](screenshots/cloudfront-result.png) |
+## Website
+![](Screenshots/Website.png) 
 
 </details>
 
-</details>
----
+## Technologies Used
 
-##**AWS Service Used**
--Amazon S3
--Amazon CloudFront
--AWS Lambda
--Amazon DynamoDB
--Route 53
+* Amazon S3
+* Amazon CloudFront
+* AWS Lambda
+* Amazon DynamoDB
+* Amazon Route 53
+* HTML
+* CSS
+* JavaScript
+* Python
 
-##**Features**
--static website hosting
--Button click counter
--DynamoDB data storage
--Lambda backend
--Serverless architecture    
 
-##**Demo**
-dtpeducm3y7tj.cloudfront.net
 
